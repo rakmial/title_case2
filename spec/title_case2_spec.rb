@@ -13,7 +13,7 @@ of word(s) from user and returns it in title case.
   4. Join array on " "
   '''
   describe("title_case2") do
-    it('must add a method to class String named title_case that returns itself') do
-      expect("cat".title_case).to(eq("cat"))  
+    it('must define method String.title_case that returns already capitalized strings the same') do
+      expect("Cat".title_case).to(eq("Cat"))  
     end
   end
