@@ -19,5 +19,7 @@ describe("title_case2") do
   it('returns uncapitalized single word strings in title case') do
     expect("cat".title_case2).to(eq("Cat"))
   end
-  # it('returns multi word strings with space separators with each word in title case')
+  it('returns multi word strings with space separators with each word in title case') do
+    expect("cat taco".title_case2).to(eq("Cat Taco"))
+  end
 end
